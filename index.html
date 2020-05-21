@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Multiplayer Game</title>
+    <title>Drawing Canvas</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
@@ -13,29 +13,37 @@
 
 
     <script>
-      //Your web app's Firebase configuration
+      // Your web app's Firebase configuration
       var firebaseConfig = {
-        apiKey: "AIzaSyBYV9kWljd-8zlRsYSLGIv2zBX4MhkNAo8",
-        authDomain: "multiplayer-car-racing-game.firebaseapp.com",
-        databaseURL: "https://multiplayer-car-racing-game.firebaseio.com",
-        projectId: "multiplayer-car-racing-game",
-        storageBucket: "",
-        messagingSenderId: "936147099930",
-        appId: "1:936147099930:web:dba47c5bb648f4ef"
+        apiKey: "AIzaSyA78fMyWJzPI3uQcwj2S0OV7uSz5RnYVzQ",
+        authDomain: "drwing-canvas.firebaseapp.com",
+        databaseURL: "https://drwing-canvas.firebaseio.com",
+        projectId: "drwing-canvas",
+        storageBucket: "drwing-canvas.appspot.com",
+        messagingSenderId: "258064447477",
+        appId: "1:258064447477:web:cbe4d8ef287a343a9c52bc"
       };
-      // // Initialize Firebase
-      // firebase.initializeApp(firebaseConfig);
-
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
     </script>
 
-    <script src="js/Player.js"></script>
-    <script src="js/Form.js"></script>
-    <script src="js/Game.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
     <script src="sketch.js"></script>
+
+    <div id ="canvascontainer"></div>
+
+    <p>
+      <button id="saveButton">save</button>
+      <button id="clearButton">clear</button>
+    </p>
+  
+    <p>
+      <ol id="drawinglist">
+  
+      </ol>
   </body>
 </html>
+
+
